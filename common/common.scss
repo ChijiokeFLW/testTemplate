@@ -718,6 +718,12 @@ tr {
           }
         }
       }
+
+      :not(.floating-search-input) {
+        .results {
+          margin: 0 0.625rem;
+        }
+      }
     }
   }
 
