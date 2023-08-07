@@ -213,25 +213,25 @@ html {
   margin: 0;
   padding: 0 1rem;
 
-  @media screen and (min-width: 640px) {
+  @media screen and (min-width: 40rem) {
     & {
       padding: 0 6vw;
     }
   }
 
-  @media screen and (min-width: 960px) {
+  @media screen and (min-width: 60rem) {
     & {
       padding: 0 12vw;
     }
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 80rem) {
     & {
       padding: 0 17vw;
     }
   }
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 100rem) {
     & {
       padding: 0 20vw;
     }
@@ -605,17 +605,25 @@ tr {
           right: 0;
         };
 
+        @media screen and (max-width: 45rem) {
+          & {
+            display: none;
+          }
+        }
+
         .search-banner-inner.wrap {
           padding: 0;
 
           .search-menu {
             margin: 0;
-            
+            width: auto;
+
             .search-input {
               margin: 0;
               padding-left: 0.625rem;
               gap: 0.75rem;
               border: 0.0625rem solid $black20;
+              border-radius: 0.25rem;
               outline: none;
 
               .search-button.btn-icon {
@@ -631,6 +639,7 @@ tr {
 
               #search-term {
                 padding: 0.625rem 0;
+                background-color: #ffffff00;
                 box-shadow: none;
 
                 &::-webkit-input-placeholder {
@@ -680,6 +689,12 @@ tr {
                 svg {
                   fill: $black40;;
                 }
+              }
+            }
+
+            .results {
+              .d-icon-search {
+                display: none;
               }
             }
           }
@@ -809,13 +824,13 @@ div.topic-navigation.with-timeline {
 #main-outlet-wrapper.wrap.post {
   padding: 0 5vw;
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 60rem) {
     & {
       padding: 0 6vw;
     }
   }
 
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 40rem) {
     & {
       padding: 0 1rem;
     }
@@ -880,7 +895,7 @@ div.topic-navigation.with-timeline {
       }
     }
 
-    @media screen and (max-width: 960px) {
+    @media screen and (max-width: 60rem) {
       & {
         grid-template-columns: 1fr;
 
