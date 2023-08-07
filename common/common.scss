@@ -587,7 +587,7 @@ tr {
         display: flex;
 
         .header-buttons {
-          @media screen and (max-width: 70rem) {
+          @media screen and (max-width: 55rem) {
             display: none;
           }
         }
@@ -597,7 +597,7 @@ tr {
           gap: 1rem;
           
           li.search-dropdown {
-            @media screen and (max-width: 60rem) {
+            @media screen and (max-width: 70rem) {
               & {
                 display: block;
               }
@@ -613,7 +613,7 @@ tr {
           right: 0;
         };
 
-        @media screen and (max-width: 45rem) {
+        @media screen and (max-width: 70rem) {
           & {
             display: none;
           }
