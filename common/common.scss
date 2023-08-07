@@ -624,96 +624,96 @@ tr {
             display: block;
           }
         }
+      }
 
-        &+.panel, .search-banner-inner.wrap {
-          padding: 0;
+      .floating-search-input .search-banner-inner.wrap, .floating-search-input+.panel, .panel {
+        padding: 0;
 
-          .search-menu {
+        .search-menu {
+          margin: 0;
+          width: auto;
+
+          .search-input {
             margin: 0;
-            width: auto;
+            padding-left: 0.625rem;
+            gap: 0.75rem;
+            border: 0.0625rem solid $black20;
+            border-radius: 0.25rem;
+            outline: none;
 
-            .search-input {
-              margin: 0;
-              padding-left: 0.625rem;
-              gap: 0.75rem;
-              border: 0.0625rem solid $black20;
-              border-radius: 0.25rem;
-              outline: none;
+            .search-button.btn-icon {
+              position: relative;
+              left: 0;
+              top: 0;
 
-              .search-button.btn-icon {
-                position: relative;
-                left: 0;
-                top: 0;
-
-                svg {
-                  color: $black40;
-                  fill: none;
-                }
-              }
-
-              #search-term {
-                padding: 0.625rem 0;
-                background-color: #ffffff00;
-                box-shadow: none;
-
-                &::-webkit-input-placeholder {
-                  /* WebKit/Chrome/Opera/Safari */
-                  @include font1;
-                  color: $placeholder;
-                  font-weight: 300;
-                }
-
-                &:-moz-placeholder {
-                  /* Firefox 4-18 */
-                  @include font2;
-                  color: $placeholder;
-                  font-weight: 300;
-                }
-
-                &::-moz-placeholder {
-                  /* Firefox 19+ */
-                  @include font2;
-                  color: $placeholder;
-                  font-weight: 300;
-                }
-
-                &:-ms-input-placeholder {
-                  /* IE 10-11 */
-                  @include font2;
-                  color: $placeholder;
-                  font-weight: 300;
-                }
-
-                &::-ms-input-placeholder {
-                  /* Edge */
-                  @include font2;
-                  color: $placeholder;
-                  font-weight: 300;
-                }
-
-                &::placeholder {
-                  /* Modern Browser */
-                  @include font2;
-                  color: $placeholder;
-                  font-weight: 300;
-                }
-              }
-
-              .searching {
-                .clear-search {
-                  display: none;
-                }
-                
-                svg {
-                  fill: $black40;;
-                }
+              svg {
+                color: $black40;
+                fill: none;
               }
             }
 
-            .results {
-              .d-icon-search {
+            #search-term {
+              padding: 0.625rem 0;
+              background-color: #ffffff00;
+              box-shadow: none;
+
+              &::-webkit-input-placeholder {
+                /* WebKit/Chrome/Opera/Safari */
+                @include font1;
+                color: $placeholder;
+                font-weight: 300;
+              }
+
+              &:-moz-placeholder {
+                /* Firefox 4-18 */
+                @include font2;
+                color: $placeholder;
+                font-weight: 300;
+              }
+
+              &::-moz-placeholder {
+                /* Firefox 19+ */
+                @include font2;
+                color: $placeholder;
+                font-weight: 300;
+              }
+
+              &:-ms-input-placeholder {
+                /* IE 10-11 */
+                @include font2;
+                color: $placeholder;
+                font-weight: 300;
+              }
+
+              &::-ms-input-placeholder {
+                /* Edge */
+                @include font2;
+                color: $placeholder;
+                font-weight: 300;
+              }
+
+              &::placeholder {
+                /* Modern Browser */
+                @include font2;
+                color: $placeholder;
+                font-weight: 300;
+              }
+            }
+
+            .searching {
+              .clear-search {
                 display: none;
               }
+              
+              svg {
+                fill: $black40;;
+              }
+            }
+          }
+
+          .results {
+            .d-icon-search {
+              display: none;
             }
           }
         }
