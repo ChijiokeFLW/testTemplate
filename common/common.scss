@@ -561,6 +561,19 @@ tr {
 
 // CJ's Common styles END
 
+.search-header--visible {
+  .panel .header-dropdown-toggle.search-dropdown,
+  .panel .search-menu {
+    fill: none;
+    
+    @media screen and (max-width: 45rem) {
+      & {
+        display: block;
+      }
+    }
+  }
+}
+
 .d-header {
   --d-max-width: 100%;
   height: auto;
