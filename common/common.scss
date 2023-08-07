@@ -561,23 +561,20 @@ tr {
 
 // CJ's Common styles END
 
-// .search-header--visible {
-//   .panel .header-dropdown-toggle.search-dropdown,
-//   .panel .search-menu {
-//     fill: none;
-    
-//     @media screen and (max-width: 45rem) {
-//       & {
-//         display: block;
+// li.search-dropdown {
+//   .search-header--visible {
+//     .panel .header-dropdown-toggle.search-dropdown,
+//     .panel .search-menu {
+//       fill: none;
+      
+//       @media screen and (max-width: 45rem) {
+//         & {
+//           display: block;
+//         }
 //       }
 //     }
 //   }
 // }
-
-.search-header--visible .panel .header-dropdown-toggle.search-dropdown, .search-header--visible .panel .search-menu {
-  display: block;
-  fill: none;
-}
 
 .d-header {
   --d-max-width: 100%;
@@ -606,6 +603,14 @@ tr {
 
         .icons.d-header-icons {
           margin: 0;
+
+          li.search-dropdown {
+            @media screen and (max-width: 45rem) {
+              & {
+                display: block;
+              }
+            }
+          }
 
           li:not(#current-user) {
             display: none;
