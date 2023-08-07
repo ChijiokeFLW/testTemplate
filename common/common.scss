@@ -623,10 +623,6 @@ tr {
           .search-menu {
             display: block;
           }
-
-          // .search-menu {
-          //   .search-input {}
-          // }
         }
 
         &+.panel, .search-banner-inner.wrap {
@@ -704,6 +700,10 @@ tr {
               }
 
               .searching {
+                .clear-search {
+                  display: none;
+                }
+                
                 svg {
                   fill: $black40;;
                 }
