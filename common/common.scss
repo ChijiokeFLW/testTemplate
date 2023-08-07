@@ -713,7 +713,7 @@ tr {
 
           .results {
             width: 100%;
-            
+
             .d-icon-search {
               display: none;
             }
@@ -723,7 +723,10 @@ tr {
 
       .menu-panel {
         .results {
-          margin: 0 0.625rem;
+          padding: {
+            left: 0.625rem;
+            right: 0.625rem;
+          };
         }
       }
     }
