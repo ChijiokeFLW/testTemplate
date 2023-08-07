@@ -619,13 +619,17 @@ tr {
           }
         }
 
-        &+.panel{
+        &+.panel {
           .search-menu {
             display: block;
           }
+
+          // .search-menu {
+          //   .search-input {}
+          // }
         }
 
-        .search-banner-inner.wrap {
+        &+.panel, .search-banner-inner.wrap {
           padding: 0;
 
           .search-menu {
