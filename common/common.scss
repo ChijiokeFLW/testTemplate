@@ -619,13 +619,18 @@ tr {
           }
         }
 
+        &+.panel{
+          .search-menu {
+            display: block;
+          }
+        }
+
         .search-banner-inner.wrap {
           padding: 0;
 
           .search-menu {
             margin: 0;
             width: auto;
-            display: block;
 
             .search-input {
               margin: 0;
@@ -938,11 +943,6 @@ div.topic-navigation.with-timeline {
     }
   }
 }
-
-// .floating-search-input+.panel .search-menu {
-//   display: block;
-// }
-
 
 .topic-post {
   border: none;
