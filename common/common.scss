@@ -938,6 +938,10 @@ div.topic-navigation.with-timeline {
   }
 }
 
+.floating-search-input+.panel .search-menu {
+  display: block;
+}
+
 
 .topic-post {
   border: none;
