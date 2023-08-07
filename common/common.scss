@@ -561,17 +561,22 @@ tr {
 
 // CJ's Common styles END
 
-.search-header--visible {
-  .panel .header-dropdown-toggle.search-dropdown,
-  .panel .search-menu {
-    fill: none;
+// .search-header--visible {
+//   .panel .header-dropdown-toggle.search-dropdown,
+//   .panel .search-menu {
+//     fill: none;
     
-    @media screen and (max-width: 45rem) {
-      & {
-        display: block;
-      }
-    }
-  }
+//     @media screen and (max-width: 45rem) {
+//       & {
+//         display: block;
+//       }
+//     }
+//   }
+// }
+
+.search-header--visible .panel .header-dropdown-toggle.search-dropdown, .search-header--visible .panel .search-menu {
+  display: block;
+  fill: none;
 }
 
 .d-header {
