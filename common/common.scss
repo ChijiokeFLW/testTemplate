@@ -561,21 +561,6 @@ tr {
 
 // CJ's Common styles END
 
-// li.search-dropdown {
-//   .search-header--visible {
-//     .panel .header-dropdown-toggle.search-dropdown,
-//     .panel .search-menu {
-//       fill: none;
-      
-//       @media screen and (max-width: 45rem) {
-//         & {
-//           display: block;
-//         }
-//       }
-//     }
-//   }
-// }
-
 .d-header {
   --d-max-width: 100%;
   height: auto;
@@ -602,11 +587,7 @@ tr {
         display: flex;
 
         .icons.d-header-icons {
-          margin: 0;
-          
-          // li:not(#current-user) {
-          //   display: none;
-          // }
+          margin-left: 2rem;
           
           li.search-dropdown {
             @media screen and (max-width: 45rem) {
@@ -614,10 +595,6 @@ tr {
                 display: block;
               }
             }
-          }
-
-          li#current-user {
-            margin-left: 2rem;
           }
         }
       }
