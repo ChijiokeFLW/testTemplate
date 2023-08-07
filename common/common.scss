@@ -586,6 +586,10 @@ tr {
       .panel {
         display: flex;
 
+        :not(.d-header-icons) {
+          display: none;
+        }
+
         .icons.d-header-icons {
           margin-left: 2rem;
           
