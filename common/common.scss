@@ -586,7 +586,7 @@ tr {
       .panel {
         display: flex;
 
-        :not(.d-header-icons) {
+        .header-buttons {
           display: none;
         }
 
