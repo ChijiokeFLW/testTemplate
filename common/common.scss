@@ -609,8 +609,6 @@ tr {
           // }
           
           li.search-dropdown {
-            display: block;
-
             @media screen and (max-width: 45rem) {
               & {
                 display: block;
