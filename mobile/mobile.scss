@@ -29,10 +29,10 @@
   }
 
   .floating-search-input {
-    & + panel {
+    & + .panel {
       margin: 0;
     }
-    
+
     @media screen and (min-width: 45rem) {
       & {
         display: block !important;
