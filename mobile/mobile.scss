@@ -1,23 +1,29 @@
 @import "mixins";
 
 .mobile-view {
-  .top-level-links {
-    @include dropdown;
-    position: absolute;
-    left: 0;
-    top: 0;
-    margin: 100% 0 0 -50% !important;
-    width: auto;
-    align-items: flex-start;
-    justify-content: flex-start;
-    overflow: scroll;
-    max-height: 90vh;
+  .d-header .wrap .contents .panel .header-buttons {
+    @media screen and (min-width: 30rem) {
+      display: block;
+    }
 
-    li {
-      width: 100%;
+    .top-level-links {
+      @include dropdown;
+      position: absolute;
+      left: 0;
+      top: 0;
+      margin: 100% 0 0 -50% !important;
+      width: auto;
+      align-items: flex-start;
+      justify-content: flex-start;
+      overflow: scroll;
+      max-height: 90vh;
 
-      @media screen and (min-width: 768px) {
-        width: auto;
+      li {
+        width: 100%;
+
+        @media screen and (min-width: 768px) {
+          width: auto;
+        }
       }
     }
   }
