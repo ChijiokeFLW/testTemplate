@@ -29,6 +29,8 @@
   }
 
   .floating-search-input {
+    display: block;
+    
     @media screen and (max-width: 70rem) {
       & {
         display: none;
