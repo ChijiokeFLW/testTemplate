@@ -3,7 +3,7 @@
 .mobile-view {
   .top-level-links {
     @include dropdown;
-    position: fixed;
+    position: absolute;
     left: 0;
     top: 0;
     margin-top: 100%;
