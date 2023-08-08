@@ -1438,7 +1438,8 @@ body:not(.ios-safari-composer-hacks) #reply-control.open,
   .grippie,
   .reply-to,
   .d-editor-preview-wrapper,
-  .btn-mini-toggle {
+  // .btn-mini-toggle {
+  .submit-panel :not(.save-or-cancel) {
     display: none;
   }
 
@@ -1593,7 +1594,7 @@ body:not(.ios-safari-composer-hacks) #reply-control.open,
 body:not(.ios-safari-composer-hacks) #reply-control.open {
   // margin: 0 17vw 0;
   margin: 0 1rem;
-  
+
   @media screen and (min-width: 40rem) {
     & {
       margin: 0 6vw;
