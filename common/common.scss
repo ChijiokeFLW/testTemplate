@@ -1439,8 +1439,8 @@ body:not(.ios-safari-composer-hacks) #reply-control.open,
   .reply-to,
   .d-editor-preview-wrapper,
   // .btn-mini-toggle {
-  .submit-panel :not(.save-or-cancel) {
-    display: none;
+  .submit-panel > :not(.save-or-cancel) {
+    display: none!important;
   }
 
   .reply-area {
