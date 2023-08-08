@@ -630,11 +630,14 @@ tr {
           gap: 1rem;
           
           li.search-dropdown {
-            fill: $tertiary;
             @media screen and (max-width: 70rem) {
               & {
                 display: block;
               }
+            }
+
+            svg {
+              fill: $tertiary;
             }
           }
         }
