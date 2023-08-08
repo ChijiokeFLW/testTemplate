@@ -275,11 +275,6 @@ html {
     }
 
     .navigation-toggle {
-      // @include font1;
-      // padding: 0.5rem 1rem;
-      // background-color: $black10;
-      // color: $black60;
-      // border-radius: 0.416875rem;
       border-radius: 0.25rem;
       display: flex;
       justify-content: center;
@@ -912,6 +907,8 @@ div.topic-navigation.with-timeline {
       &.posts {
         margin: 0;
         grid-column: 1/2;
+        grid-template-areas: "posts";
+        grid-template-columns: auto;
       }
     }
     
@@ -923,15 +920,15 @@ div.topic-navigation.with-timeline {
       display: none;
     }
 
-    .suggested-topics-wrapper {
+    .more-content-wrapper {
       grid-column: 2/-1;
       grid-row: 2/7;
 
-      .suggested-topics {
+      .more-content-topics {
         margin: 0;
         padding: 0;
 
-        .suggested-topics-title {
+        .more-topics-title {
           margin-bottom: 0.75rem;
           font-family: 'Millik';
           font-weight: 400;
