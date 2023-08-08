@@ -6,6 +6,10 @@
       display: block;
     }
 
+    .icons.d-header-icons {
+      margin-left: 0.5rem
+    }
+
     .top-level-links {
       @include dropdown;
       position: absolute;
