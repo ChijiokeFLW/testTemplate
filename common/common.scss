@@ -1575,8 +1575,15 @@ body:not(.ios-safari-composer-hacks) #reply-control.open,
           background-color: #ffffff;
           border-radius: 0.25rem;
           border: 0.0625rem solid #2A3362;
-          font-size: 1rem;
+          font-family: 'Moderat';
+          font-size: 0.875rem;
+          font-weight: 500;
+          line-height: 1.05rem;
           order: 1;
+
+          svg {
+            font-size: 1rem;
+          }
         }
       }
     }
