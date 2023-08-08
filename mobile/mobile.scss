@@ -33,7 +33,7 @@
 
     @media screen and (max-width: 45rem) {
       & {
-        display: none;
+        display: none !important;
       }
     }
   }
@@ -41,7 +41,7 @@
   li.search-dropdown {
     @media screen and (max-width: 45rem) {
       & {
-        display: block;
+        display: block !important;
       }
     }
   }
