@@ -2,6 +2,8 @@
 
 .mobile-view {
   .d-header .wrap .contents .panel .header-buttons {
+    margin: 0;
+    
     @media screen and (min-width: 30rem) {
       display: block;
     }
