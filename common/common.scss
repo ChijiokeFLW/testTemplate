@@ -628,6 +628,10 @@ tr {
         .icons.d-header-icons {
           margin-left: 2rem;
           gap: 1rem;
+
+          svg {
+            color: $secondary;
+          }
           
           li.search-dropdown {
             @media screen and (max-width: 70rem) {

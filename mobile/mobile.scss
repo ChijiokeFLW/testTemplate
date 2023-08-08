@@ -7,6 +7,10 @@
         display: block;
       }
 
+      .btn-custom-header-dropdown-mobile .btn .d-icon {
+        color: red;
+      }
+
       .top-level-links {
         @include dropdown;
         position: absolute;
