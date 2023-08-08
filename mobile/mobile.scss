@@ -31,8 +31,7 @@
   .floating-search-input {
     @media screen and (min-width: 45rem) {
       & {
-        // display: block !important;
-        display: block;
+        display: block !important;
       }
     }
   }
@@ -40,8 +39,7 @@
   li.search-dropdown {
     @media screen and (min-width: 0) and (max-width: 45rem) {
       & {
-        // display: block !important;
-        display: block;
+        display: block !important;
       }
     }
   }
