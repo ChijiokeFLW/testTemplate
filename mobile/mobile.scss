@@ -13,7 +13,6 @@
 
       .top-level-links {
         @include dropdown;
-        position: absolute;
         left: 0;
         top: 0;
         margin: 100% 0 0 -50% !important;
