@@ -939,24 +939,24 @@ div.topic-navigation.with-timeline {
         .topics {
           padding: 0;
         }
+      }
 
-        .suggested-topics-message {
+      .suggested-topics-message {
+        margin: 0;
+        font-family: 'Moderat';
+        font-size: 0.875rem;
+        font-weight: 500;
+        color: $black40;
+
+        .badge-category-bg {
+          display: none;
+        }
+
+        a,
+        a.badge-wrapper.bullet span.badge-category {
           margin: 0;
-          font-family: 'Moderat';
-          font-size: 0.875rem;
-          font-weight: 500;
-          color: $black40;
-
-          .badge-category-bg {
-            display: none;
-          }
-
-          a,
-          a.badge-wrapper.bullet span.badge-category {
-            margin: 0;
-            color: #ff5805;
-            line-height: normal;
-          }
+          color: #ff5805;
+          line-height: normal;
         }
       }
     }
@@ -2123,7 +2123,7 @@ body:not(.ios-safari-composer-hacks) #reply-control.open {
     .flw-auth-footer-helper-links {
       display: flex;
       flex-direction: row;
-      gap: 1.5em;
+      gap: min(2vw, 1.5rem);
 
       a {
         color: $black80;
@@ -2133,9 +2133,9 @@ body:not(.ios-safari-composer-hacks) #reply-control.open {
     p,
     a {
       font-family: 'Moderat';
-      font-size: 0.875rem;
       font-weight: 500;
       line-height: 1.05rem;
+      font-size: min(3vw, 0.875rem);
     }
   }
 }
