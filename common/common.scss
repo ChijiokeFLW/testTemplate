@@ -1438,7 +1438,6 @@ body:not(.ios-safari-composer-hacks) #reply-control.open,
   .grippie,
   .reply-to,
   .d-editor-preview-wrapper,
-  // .btn-mini-toggle {
   .submit-panel > :not(.save-or-cancel) {
     display: none!important;
   }
@@ -1576,6 +1575,7 @@ body:not(.ios-safari-composer-hacks) #reply-control.open,
           background-color: #ffffff;
           border-radius: 0.25rem;
           border: 0.0625rem solid #2A3362;
+          font-size: 1rem;
           order: 1;
         }
       }
