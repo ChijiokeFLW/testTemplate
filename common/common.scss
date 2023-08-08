@@ -152,6 +152,10 @@ html {
   font-size: 16px; // set base reference from rem units
 }
 
+body {
+  width: min(100%, 100vw);
+}
+
 .title {
   background-image: url($logo);
 }
