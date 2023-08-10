@@ -423,12 +423,15 @@ tr {
 
   .topic-list-item-extras {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    gap: 1rem;
 
     .topic-list-item-tags {
       .discourse-tags {
         display: flex;
+        flex-wrap: wrap;
         gap: 0.5rem;
 
         .discourse-tag {
