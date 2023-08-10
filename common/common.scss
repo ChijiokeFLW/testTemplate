@@ -1487,10 +1487,23 @@ body:not(.ios-safari-composer-hacks) #reply-control.open,
 
       .title-and-category {
         gap: 1rem;
+        flex-wrap: wrap;
+
+        @media screen and (min-width: 30rem) {
+          gap: 0;
+
+          & .title-input {
+            flex: 1 1 100%;
+          }
+        }
 
         & > .category-input, & > .mini-tag-chooser {
           max-width: 100%;
           flex: 1 1 45%;
+        }
+
+        & > .category-input {
+          margin: 0;
         }
       }
     }
