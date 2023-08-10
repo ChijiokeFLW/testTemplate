@@ -35,6 +35,12 @@
             padding: 0;
           }
 
+          &:hover {
+            .custom-header-dropdown {
+              position: relative;
+            }
+          }
+
           .top-level-links {
             @include dropdown;
             left: 0;
@@ -52,10 +58,6 @@
               @media screen and (min-width: 768px) {
                 width: auto;
               }
-            }
-
-            .custom-header-dropdown {
-              position: relative;
             }
           }
         }
