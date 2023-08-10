@@ -76,7 +76,7 @@
     position: fixed;
   }
 
-  .d-modal.login-modal:not(.hidden).fixed-modal .modal-inner-container, .d-modal.create-account.fixed-modal .modal-inner-container {
+  #discourse-modal.d-modal.login-modal:not(.hidden).fixed-modal .modal-inner-container, .d-modal.create-account.fixed-modal .modal-inner-container {
     max-width: 100%;
     max-height: 100%;
     margin: 0;
@@ -86,8 +86,6 @@
     }
 
     .modal-body {
-      margin: 2rem 0;
-
       &:not(.reorder-categories):not(.poll-ui-builder):not(.poll-breakdown) {
         max-height: 100% !important;
       }
