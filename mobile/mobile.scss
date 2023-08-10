@@ -22,6 +22,12 @@
         & > button {
           display: flex;
           margin: 0;
+
+          @media screen and (min-width: 24.5rem) {
+            &.sign-up-button {
+              display: none;
+            }
+          }
         }
 
         .btn-custom-header-dropdown-mobile .btn .d-icon {
@@ -49,7 +55,7 @@
             li {
               width: 100%;
 
-              @media screen and (min-width: 768px) {
+              @media screen and (min-width: 48rem) {
                 width: auto;
               }
             }
