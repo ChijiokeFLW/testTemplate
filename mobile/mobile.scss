@@ -87,7 +87,10 @@
 
     .modal-body {
       margin: 2rem 0;
-      max-height: 100% !important;
+
+      &:not(.reorder-categories):not(.poll-ui-builder):not(.poll-breakdown) {
+        max-height: 100% !important;
+      }
 
       .create-account-form {
         padding: 0;
