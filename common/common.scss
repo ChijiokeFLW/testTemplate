@@ -1442,7 +1442,7 @@ article:not(#post_1) {
   max-height: 100% !important;
 }
 
-.login-modal:not(.hidden) .modal-footer {
+.d-modal.login-modal:not(.hidden) .modal-footer {
   margin-top: 12px;
   padding: 0;
   border: 0;
@@ -1734,6 +1734,7 @@ body:not(.ios-safari-composer-hacks) #reply-control.open {
 
 .login-modal:not(.hidden) .login-left-side #login-form {
   margin: 0;
+  padding: 0;
 
   .input-group {
     margin: 12px 0;
