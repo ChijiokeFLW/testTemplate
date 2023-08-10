@@ -16,7 +16,12 @@
         gap: 1rem;
 
         @media screen and (min-width: 30rem) {
-          display: block;
+          display: flex;
+        }
+
+        & > button {
+          display: flex;
+          margin: 0;
         }
 
         .btn-custom-header-dropdown-mobile .btn .d-icon {
@@ -47,6 +52,10 @@
               @media screen and (min-width: 768px) {
                 width: auto;
               }
+            }
+
+            .custom-header-dropdown {
+              position: relative;
             }
           }
         }
