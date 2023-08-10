@@ -1896,6 +1896,10 @@ body:not(.ios-safari-composer-hacks) #reply-control.open {
   margin: 16px 0 0;
   font-size: 12px;
   color: $black40;
+
+  a {
+    color: #576AE6;
+  }
 }
 
 .d-modal.create-account .create-account-form {
