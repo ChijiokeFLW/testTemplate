@@ -1,39 +1,60 @@
 @import "mixins";
 
 .mobile-view {
-  .d-header .wrap .contents .panel {
-    .header-buttons {
-      @media screen and (min-width: 30rem) {
-        display: block;
-      }
-
-      .btn-custom-header-dropdown-mobile .btn .d-icon {
-        color: #2a3362;
-      }
-
-      .top-level-links {
-        @include dropdown;
-        left: 0;
-        top: 0;
-        margin: 100% 0 0 -50% !important;
-        width: auto;
-        align-items: flex-start;
-        justify-content: flex-start;
-        overflow: scroll;
-        max-height: 90vh;
-
-        li {
-          width: 100%;
-
-          @media screen and (min-width: 768px) {
-            width: auto;
-          }
-        }
+  .d-header .wrap .contents {
+    .title {
+      .logo-mobile {
+        max-width: initial;
+        height: 2.375rem;
       }
     }
 
-    .icons.d-header-icons {
-      margin-left: 0.5rem
+    .panel {
+      .header-buttons {
+        margin: 0;
+        display: flex;
+        gap: 1rem;
+
+        @media screen and (min-width: 30rem) {
+          display: block;
+        }
+
+        .btn-custom-header-dropdown-mobile .btn .d-icon {
+          color: #2a3362;
+        }
+
+        .custom-header-links {
+          & > .btn-custom-header-dropdown-mobile button {
+            width: 2.375rem;
+            height: 2.375rem;
+            padding: 0;
+          }
+
+          .top-level-links {
+            @include dropdown;
+            left: 0;
+            top: 0;
+            margin: 100% 0 0 -50% !important;
+            width: auto;
+            align-items: flex-start;
+            justify-content: flex-start;
+            overflow: scroll;
+            max-height: 90vh;
+
+            li {
+              width: 100%;
+
+              @media screen and (min-width: 768px) {
+                width: auto;
+              }
+            }
+          }
+        }
+      }
+
+      .icons.d-header-icons {
+        margin-left: 0.5rem
+      }
     }
   }
 
