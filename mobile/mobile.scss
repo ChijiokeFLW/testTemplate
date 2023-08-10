@@ -23,7 +23,7 @@
           display: flex;
           margin: 0;
 
-          @media screen and (min-width: 24.5rem) {
+          @media screen and (max-width: 24.5rem) {
             &.sign-up-button {
               display: none;
             }
