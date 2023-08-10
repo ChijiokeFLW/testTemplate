@@ -1182,7 +1182,7 @@ div.topic-navigation.with-timeline {
       .add-comment {
         margin-left: auto;
 
-        @media screen and (min-width: 28.5rem) {
+        @media screen and (max-width: 28.5rem) {
           margin: 0;
         }
       }
