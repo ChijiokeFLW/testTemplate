@@ -1752,7 +1752,7 @@ body:not(.ios-safari-composer-hacks) #reply-control.open {
   }
 }
 
-.login-modal:not(.hidden) #login-form .input-group input {
+.d-modal.login-modal:not(.hidden) #login-form .input-group input {
   margin: 0;
   padding: 0.75em 0.77em;
   min-width: 250px;
