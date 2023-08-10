@@ -1841,13 +1841,15 @@ body:not(.ios-safari-composer-hacks) #reply-control.open {
 
 .d-modal.create-account .has-alt-auth .login-form,
 .d-modal.create-account .login-form {
-  background: #FFF;
+  margin: 0;
   padding: 0;
+  background: #FFF;
   grid-area: form;
   overflow-y: visible;
 
   form {
     margin: 0;
+    display: block;
 
     .input-group {
       margin: 12px 0;
