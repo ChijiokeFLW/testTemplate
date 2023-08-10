@@ -2059,14 +2059,25 @@ body:not(.ios-safari-composer-hacks) #reply-control.open {
         .alt-placeholder {
           background-color: #FFF;
         }
+
+        .password-show-icon {
+          padding-right: 20px;
+          position: absolute;
+          right: 0;
+          top: 17px;
+        }
+
+        .tip {
+          display: block;
+        }
       }
 
-      .password-show-icon {
-        padding-right: 20px;
-        position: absolute;
-        right: 0;
-        top: 17px;
-      }
+      // .password-show-icon {
+      //   padding-right: 20px;
+      //   position: absolute;
+      //   right: 0;
+      //   top: 17px;
+      // }
     }
 
     .login-right-side,
