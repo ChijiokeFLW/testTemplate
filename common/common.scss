@@ -2044,8 +2044,9 @@ body:not(.ios-safari-composer-hacks) #reply-control.open {
         align-self: flex-start;
 
         .mobile-login-title {
-          margin: 0;
-          line-height: normal;
+          margin-bottom: 0.25rem;
+          line-height: 2.24rem;
+          font-family: 'Millik';
         }
       }
     }
