@@ -2040,7 +2040,13 @@ body:not(.ios-safari-composer-hacks) #reply-control.open {
       background-color: #FFF;
 
       .login-welcome-header {
-        left: -50px;
+        margin: 0;
+        align-self: flex-start;
+
+        .mobile-login-title {
+          margin: 0;
+          line-height: normal;
+        }
       }
     }
 
