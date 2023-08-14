@@ -22,9 +22,7 @@
     {{#if this.canLoginLocal}}
       <div class="login-left-side">
         <div class="login-welcome-header">
-          <h1 class="login-title">{{i18n "login.header_title"}}</h1>
-          <img src={{this.wavingHandURL}} alt="" class="waving-hand" />
-          <p class="login-subheader">{{i18n "login.subheader_title"}}</p>
+          <h1 class="mobile-login-title">Login</h1>
         </div>
         <form id="login-form" method="post">
           <div id="credentials" class={{this.credentialsClass}}>
@@ -78,7 +76,7 @@
                   id="forgot-password-link"
                   tabindex="3"
                   {{on "click" this.handleForgotPassword}}
-                >{{i18n "forgot_password.action"}}</a>
+                >Forgot password?</a>
               </div>
               <div
                 class="caps-lock-warning {{unless this.capsLockOn 'hidden'}}"
