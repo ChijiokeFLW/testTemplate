@@ -1435,8 +1435,10 @@ article:not(#post_1) {
 
 #discourse-modal.fixed-modal:not(.history-modal) .modal-body:not(.reorder-categories):not(.poll-ui-builder):not(.poll-breakdown):not(.sidebar-categories-form-modal) {
   max-height: 100% !important;
-  margin: 1rem 0;
-  padding: 0;
+  // margin: 1rem 0;
+  // padding: 0;
+  margin: auto 0;
+  padding: 1rem 0;
 }
 
 .d-modal.login-modal:not(.hidden) .modal-footer {
@@ -1799,7 +1801,6 @@ body:not(.ios-safari-composer-hacks) #reply-control.open {
 
 .login-modal:not(.hidden) #login-form {
   .input-group {
-
     label.alt-placeholder,
     input:not(.value-entered):not(:focus)+label.alt-placeholder {
       color: $black40;
