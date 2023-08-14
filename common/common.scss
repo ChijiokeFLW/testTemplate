@@ -2032,22 +2032,17 @@ body:not(.ios-safari-composer-hacks) #reply-control.open {
 
   .modal-body {
     .login-left-side {
+      padding: 0;
+      width: auto;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding: 0;
       background-color: #FFF;
 
       .login-welcome-header {
         margin: 0;
         align-self: flex-start;
-
-        .mobile-login-title {
-          margin-bottom: 0.25rem;
-          line-height: 2.24rem;
-          font-family: 'Millik';
-        }
       }
     }
 
