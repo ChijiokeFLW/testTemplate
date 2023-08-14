@@ -111,11 +111,18 @@
         padding: 0;
       }
 
-      .login-welcome-header .mobile-login-title {
-        margin-bottom: 0.25rem;
-        line-height: 2.24rem;
-        font-family: 'Millik';
-        color: $secondary;
+      .login-welcome-header {
+        margin: 0;
+        position: relative;
+        background-color: #ffffff00;
+        align-self: flex-start;
+        
+        .mobile-login-title {
+          margin-bottom: 0.25rem;
+          line-height: 2.24rem;
+          font-family: 'Millik';
+          color: $secondary;
+        }
       }
     }
   }
