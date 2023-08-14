@@ -163,13 +163,17 @@
                   class="title-and-category
                     {{if this.composer.showPreview 'with-preview'}}"
                 >
-                  <div>Testing having extra data</div>
+                  <p class="new-post-heading">Add New Topic</p>
                   
-                  <ComposerTitle
-                    @composer={{this.composer.model}}
-                    @lastValidatedAt={{this.composer.lastValidatedAt}}
-                    @focusTarget={{this.composer.focusTarget}}
-                  />
+                  <div>
+                    <p>Title</p>
+                    
+                    <ComposerTitle
+                      @composer={{this.composer.model}}
+                      @lastValidatedAt={{this.composer.lastValidatedAt}}
+                      @focusTarget={{this.composer.focusTarget}}
+                    />
+                  </div>
 
                   {{#unless this.composer.site.mobileView}}
                     {{#if this.composer.model.showCategoryChooser}}
