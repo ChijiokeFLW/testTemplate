@@ -187,10 +187,9 @@
             </div>
           </ComposerEditor>
 
-          <div
-            class="title-and-category
-              {{if this.composer.showPreview 'with-preview'}}"
-          >
+          <div>
+            <p>Category</p>
+            
             <div class="category-input">
               <CategoryChooser
                 @value={{this.composer.model.categoryId}}
