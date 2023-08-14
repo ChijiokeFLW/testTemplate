@@ -1971,7 +1971,7 @@ body:not(.ios-safari-composer-hacks) #reply-control.open {
   --modal-max-width: 100%;
 
   #flutterwave-auth-header {
-    margin-bottom: auto;
+    // margin-bottom: auto;
     padding: 24px 16px 32px 24px;
     display: flex;
     flex-direction: row;
@@ -2003,7 +2003,8 @@ body:not(.ios-safari-composer-hacks) #reply-control.open {
   }
 
   .flutterwave-footer-area {
-    margin: auto 5vw 0;
+    // margin: auto 5vw 0;
+    margin: 0 5vw;
     padding: 2.375rem 0 3rem;
   }
 
