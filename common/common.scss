@@ -1435,7 +1435,7 @@ article:not(#post_1) {
 
 #discourse-modal.fixed-modal:not(.history-modal) .modal-body:not(.reorder-categories):not(.poll-ui-builder):not(.poll-breakdown):not(.sidebar-categories-form-modal) {
   max-height: 100% !important;
-  margin: auto 0;
+  margin: auto;
   padding: 1rem 0;
 }
 
