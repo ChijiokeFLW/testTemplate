@@ -164,16 +164,24 @@
                     {{if this.composer.showPreview 'with-preview'}}"
                 >
                   <p class="new-post-heading">Add New Topic</p>
-                  
-                  <div>
-                    <p>Title</p>
-                    
+
+                  {{#if this.composer.site.mobileView}}
+                    <div>
+                      <p>Title</p>
+
+                      <ComposerTitle
+                        @composer={{this.composer.model}}
+                        @lastValidatedAt={{this.composer.lastValidatedAt}}
+                        @focusTarget={{this.composer.focusTarget}}
+                      />
+                    </div>
+                    {{else}}
                     <ComposerTitle
                       @composer={{this.composer.model}}
                       @lastValidatedAt={{this.composer.lastValidatedAt}}
                       @focusTarget={{this.composer.focusTarget}}
                     />
-                  </div>
+                  {{/if}}
 
                   {{#unless this.composer.site.mobileView}}
                     {{#if this.composer.model.showCategoryChooser}}
