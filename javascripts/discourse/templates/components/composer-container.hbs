@@ -112,70 +112,6 @@
               @focusTarget={{this.composer.focusTarget}}
             />
           </div>
-
-          <div
-            class="title-and-category
-              {{if this.composer.showPreview 'with-preview'}}"
-          >
-            <div class="category-input">
-              <CategoryChooser
-                @value={{this.composer.model.categoryId}}
-                @onChange={{this.composer.updateCategory}}
-                @options={{hash
-                  disabled=this.composer.disableCategoryChooser
-                  scopedCategoryId=this.composer.scopedCategoryId
-                  prioritizedCategoryId=this.composer.prioritizedCategoryId
-                }}
-              />
-              <PopupInputTip
-                @validation={{this.composer.categoryValidation}}
-              />
-            </div>
-
-            {{!-- {{#unless this.composer.site.mobileView}}
-              {{#if this.composer.model.showCategoryChooser}}
-                <div class="category-input">
-                  <CategoryChooser
-                    @value={{this.composer.model.categoryId}}
-                    @onChange={{this.composer.updateCategory}}
-                    @options={{hash
-                      disabled=this.composer.disableCategoryChooser
-                      scopedCategoryId=this.composer.scopedCategoryId
-                      prioritizedCategoryId=this.composer.prioritizedCategoryId
-                    }}
-                  />
-                  <PopupInputTip
-                    @validation={{this.composer.categoryValidation}}
-                  />
-                </div>
-              {{/if}}
-            {{/unless}}
-
-            {{#if this.composer.canEditTags}}
-              <MiniTagChooser
-                @value={{this.composer.model.tags}}
-                @onChange={{action (mut this.composer.model.tags)}}
-                @options={{hash
-                  disabled=this.composer.disableTagsChooser
-                  categoryId=this.composer.model.categoryId
-                  minimum=this.composer.model.minimumRequiredTags
-                }}
-              />
-              <PopupInputTip
-                @validation={{this.composer.tagValidation}}
-              />
-            {{/if}} --}}
-
-            <PluginOutlet
-              @name="after-title-and-category"
-              @outletArgs={{hash
-                model=this.composer.model
-                tagValidation=this.composer.tagValidation
-                canEditTags=this.composer.canEditTags
-                disabled=this.composer.disableTagsChooser
-              }}
-            />
-          </div>
           
           <ComposerEditor
             @topic={{this.composer.topic}}
@@ -250,6 +186,70 @@
               {{/unless}}
             </div>
           </ComposerEditor>
+
+          <div
+            class="title-and-category
+              {{if this.composer.showPreview 'with-preview'}}"
+          >
+            <div class="category-input">
+              <CategoryChooser
+                @value={{this.composer.model.categoryId}}
+                @onChange={{this.composer.updateCategory}}
+                @options={{hash
+                  disabled=this.composer.disableCategoryChooser
+                  scopedCategoryId=this.composer.scopedCategoryId
+                  prioritizedCategoryId=this.composer.prioritizedCategoryId
+                }}
+              />
+              <PopupInputTip
+                @validation={{this.composer.categoryValidation}}
+              />
+            </div>
+
+            {{!-- {{#unless this.composer.site.mobileView}}
+              {{#if this.composer.model.showCategoryChooser}}
+                <div class="category-input">
+                  <CategoryChooser
+                    @value={{this.composer.model.categoryId}}
+                    @onChange={{this.composer.updateCategory}}
+                    @options={{hash
+                      disabled=this.composer.disableCategoryChooser
+                      scopedCategoryId=this.composer.scopedCategoryId
+                      prioritizedCategoryId=this.composer.prioritizedCategoryId
+                    }}
+                  />
+                  <PopupInputTip
+                    @validation={{this.composer.categoryValidation}}
+                  />
+                </div>
+              {{/if}}
+            {{/unless}}
+
+            {{#if this.composer.canEditTags}}
+              <MiniTagChooser
+                @value={{this.composer.model.tags}}
+                @onChange={{action (mut this.composer.model.tags)}}
+                @options={{hash
+                  disabled=this.composer.disableTagsChooser
+                  categoryId=this.composer.model.categoryId
+                  minimum=this.composer.model.minimumRequiredTags
+                }}
+              />
+              <PopupInputTip
+                @validation={{this.composer.tagValidation}}
+              />
+            {{/if}} --}}
+
+            <PluginOutlet
+              @name="after-title-and-category"
+              @outletArgs={{hash
+                model=this.composer.model
+                tagValidation=this.composer.tagValidation
+                canEditTags=this.composer.canEditTags
+                disabled=this.composer.disableTagsChooser
+              }}
+            />
+          </div>
           {{else}}
           <ComposerEditor
             @topic={{this.composer.topic}}
