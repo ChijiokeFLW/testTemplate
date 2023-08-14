@@ -10,27 +10,13 @@
         @connectorTagName="div"
       />
     </span>
-    <div id="flutterwave-auth-header">
-      <FlwLogoButton @action={{ route-action "closeModal" }} />
-      
-      <DButton
-        @class="flw-header-btn"
-        @id="flw-create-account-header-btn"
-        @action={{route-action "showLogin"}}
-        @label={{(theme-prefix "create_account.login_cta_text")}}
-      />
-    </div>
     <DModalBody
       @class={{this.modalBodyClasses}}
       @preventModalAlertHiding={{true}}
     >
       <div class="create-account-form {{this.authOptions.auth_provider}}">
         <div class="login-welcome-header" id="create-account-title">
-          <h1 class="login-title">{{i18n "create_account.header_title"}}</h1>
-          <img src={{this.wavingHandURL}} alt="" class="waving-hand" />
-          <p class="login-subheader">{{i18n
-              "create_account.subheader_title"
-            }}</p>
+          <h1 class="mobile-login-title">Create account</h1>
         </div>
         {{#if this.showCreateForm}}
 
@@ -275,27 +261,10 @@
           @connectorTagName="div"
         />
 
-        <p class="flw-extra-text">
-          By clicking “get started”, I acknowledge that I have read and do hereby accept the terms and conditions in the Flutterwave's <a href="https://flutterwave.com/ng/terms">Terms of Use</a> and <a href="https://flutterwave.com/ng/privacy-policy">Privacy policy</a>.
-        </p>
-
         {{#if this.skipConfirmation}}
           {{loading-spinner size="large"}}
         {{/if}}
       </div>
     </DModalBody>
   {{/unless}}
-  <div class="flutterwave-footer-area">
-    <div class="flutterwave-footer">
-      <p>
-        © Flutterwave  2023
-      </p>
-      <div class="flw-auth-footer-helper-links">
-        <a href="#">FAQs</a>
-        <a href="https://flutterwave.com/ng/privacy-policy">Privacy policy</a>
-        <a href="https://flutterwave.com/ng/terms">Terms and Conditions</a>
-        <p>Create Account Modal Works</p>
-      </div>
-    </div>
-  </div>
 </CreateAccount>
