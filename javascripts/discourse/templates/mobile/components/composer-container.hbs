@@ -171,22 +171,24 @@
                     @focusTarget={{this.composer.focusTarget}}
                   />
 
-                  {{#if this.composer.model.showCategoryChooser}}
-                    <div class="category-input">
-                      <CategoryChooser
-                        @value={{this.composer.model.categoryId}}
-                        @onChange={{this.composer.updateCategory}}
-                        @options={{hash
-                          disabled=this.composer.disableCategoryChooser
-                          scopedCategoryId=this.composer.scopedCategoryId
-                          prioritizedCategoryId=this.composer.prioritizedCategoryId
-                        }}
-                      />
-                      <PopupInputTip
-                        @validation={{this.composer.categoryValidation}}
-                      />
-                    </div>
-                  {{/if}}
+                  {{#unless this.composer.site.mobileView}}
+                    {{#if this.composer.model.showCategoryChooser}}
+                      <div class="category-input">
+                        <CategoryChooser
+                          @value={{this.composer.model.categoryId}}
+                          @onChange={{this.composer.updateCategory}}
+                          @options={{hash
+                            disabled=this.composer.disableCategoryChooser
+                            scopedCategoryId=this.composer.scopedCategoryId
+                            prioritizedCategoryId=this.composer.prioritizedCategoryId
+                          }}
+                        />
+                        <PopupInputTip
+                          @validation={{this.composer.categoryValidation}}
+                        />
+                      </div>
+                    {{/if}}
+                  {{/unless}}
 
                   {{#if this.composer.canEditTags}}
                     <MiniTagChooser
