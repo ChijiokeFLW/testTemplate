@@ -1461,7 +1461,7 @@ article:not(#post_1) {
       border-radius: 0.25rem;
       outline: none;
 
-      &:active {
+      &:focus {
         border-color: $secondary;
       }
 
