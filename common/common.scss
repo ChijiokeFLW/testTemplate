@@ -1770,8 +1770,22 @@ article:not(#post_1) {
 }
 
 body.search-page {
-  .main-outlet {
+  #main-outlet {
     padding: 1.5rem 0;
+
+    .search-header {
+      padding: 0;
+
+      .search-page-heading, .search-filters {
+        display: none;
+      }
+
+      .search-bar {
+        & > :not(input.full-page-search) {
+          display: none;
+        }
+      }
+    }
   }
 }
 
