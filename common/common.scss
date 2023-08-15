@@ -1469,6 +1469,13 @@ article:not(#post_1) {
       }
     }
 
+    .bookmark-options-panel {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
     .bookmark-name-wrap .ember-text-field.bookmark-name, .bookmark-options-panel .select-kit-header:not(.btn) {
       margin: 0;
       padding: 0.625rem;
@@ -1525,7 +1532,6 @@ article:not(#post_1) {
       .name {
         font-size: 0.875rem;
         line-height: 1.25rem;
-        color: #B5B8BA;
       }
     }
 
