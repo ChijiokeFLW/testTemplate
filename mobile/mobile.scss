@@ -93,12 +93,23 @@
             }
           }
 
-          .action-title a {
-            font-size: 0.875rem;
-            font-weight: 500;
-            line-height: normal;
-            letter-spacing: -0.3px;
-            color: #2a3362;
+          .action-title {
+            gap: 0.5rem;
+
+            img {
+              margin: 0;
+              width: 1.125rem;
+              height: 1.125rem;
+              border: none;
+            }
+
+            a {
+              font-size: 0.875rem;
+              font-weight: 500;
+              line-height: normal;
+              letter-spacing: -0.3px;
+              color: #2a3362;
+            }
           }
         }
 
