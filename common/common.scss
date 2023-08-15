@@ -308,8 +308,10 @@ body {
     align-self: flex-start;
 
     .btn-default {
+      margin: 0;
       padding: 0.75rem 1.25rem 0.75rem 1.5rem;
       border-radius: 0.25rem;
+      border: none;
       background-color: $primary;
       display: flex;
       justify-content: center;
@@ -326,6 +328,10 @@ body {
         @include font2;
         color: $tertiary;
       }
+    }
+
+    & > :not(.btn-default) {
+      display: none;
     }
   }
 }
