@@ -655,9 +655,9 @@ tr {
               display: block;
             }
 
-            // svg {
-            //   fill: $tertiary;
-            // }
+            svg {
+              fill: $tertiary;
+            }
           }
 
           li.hamburger-dropdown {
@@ -709,10 +709,10 @@ tr {
               left: 0;
               top: 0;
 
-              // svg {
-              //   color: $black40;
-              //   fill: none;
-              // }
+              svg {
+                color: $black40;
+                fill: none;
+              }
             }
 
             #search-term {
@@ -825,7 +825,7 @@ tr {
           transform: translate(0, -0.125rem);
 
           svg {
-            transform-origin: 30% 60%;
+            transform-origin: 50% 50%;
             transition: transform 0.25s ease;
           }
         }
@@ -1239,14 +1239,14 @@ div.topic-navigation.with-timeline {
         }
       }
 
-      // .clicked {
-      //   .menu-button-item {
-      //     svg {
-      //       color: $primary;
-      //       fill: $primary;
-      //     }
-      //   }
-      // }
+      .clicked {
+        .menu-button-item {
+          svg {
+            color: $primary;
+            fill: $primary;
+          }
+        }
+      }
     }
 
     .post-comment-header {
