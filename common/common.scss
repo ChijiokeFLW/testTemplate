@@ -1539,6 +1539,7 @@ article:not(#post_1) {
         .tap-tile {
           padding: 1rem 0 0.5rem;
           border-top: none;
+          border-bottom: 0.0625rem solid $black10;
 
           svg {
             display: none;
@@ -1550,6 +1551,32 @@ article:not(#post_1) {
           }
         }
       }
+    }
+  }
+
+  .modal-footer {
+    border: none;
+
+    button {
+      margin: 0;
+      padding: 0.75rem 1.25rem;
+      border-radius: 0.25rem;
+
+      span {
+        font-size: 0.875rem;
+        font-weight: 500;
+        line-height: 1.25rem;
+      }
+    }
+
+    .save-bookmark {
+      background-color: $primary;
+      border: none;
+    }
+
+    .d-modal-cancel {
+      border: 0.125 solid $secondary;
+      color: $secondary;
     }
   }
 }
