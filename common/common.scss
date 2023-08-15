@@ -1525,6 +1525,18 @@ article:not(#post_1) {
 
     .control-group:not(.bookmark-name-wrap) {
       margin: 0.5rem 0;
+
+      .control-label {
+        margin: 0;
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+        color: $black80;
+      }
+
+      .tap-tile {
+        padding: 1rem 0 0.5rem;
+        border-top: none;
+      }
     }
   }
 }
