@@ -1851,6 +1851,10 @@ body.search-page {
                   line-height: 1rem;
                   color: $black40;
                 }
+
+                .discourse-tags {
+                  display: none;
+                }
               }
             }
           }
