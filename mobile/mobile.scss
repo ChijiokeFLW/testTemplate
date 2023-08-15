@@ -84,9 +84,16 @@
         .reply-details .composer-action-title {
           gap: 0.75rem;
 
-          div{}
+          .select-kit .select-kit-header {
+            margin: 0;
+            border: none;
 
-          .action-title {
+            svg {
+              padding: 0;
+            }
+          }
+
+          .action-title a {
             font-size: 0.875rem;
             font-weight: 500;
             line-height: normal;
