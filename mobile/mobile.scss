@@ -78,10 +78,17 @@
 
   .wrap.post {
     & ~ #reply-control.open.composer-action-reply, & ~ #reply-control.hide-preview, & ~ #reply-control {
-      background-color: red;
-
       .reply-area .reply-to {
         display: flex !important;
+
+        .reply-details {
+          display: flex;
+          gap: 0.75rem;
+        }
+
+        .composer-controls {
+          display: none;
+        }
       }
     }
   }
