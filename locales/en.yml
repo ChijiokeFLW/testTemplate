@@ -8,6 +8,3 @@ en:
     login_cta_text: "Already have an account? Login"
     cta_text: "Get Started"
   publish: "Publish"
-  js:
-    forgot_password:
-      title: "Forgot Password"
