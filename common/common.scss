@@ -1776,7 +1776,7 @@ body.search-page {
     .search-header {
       padding: 0;
 
-      .search-page-heading, .search-filters {
+      .search-page-heading > :not(#search-result-count), .search-filters {
         display: none;
       }
 
