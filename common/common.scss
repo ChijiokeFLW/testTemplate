@@ -1429,8 +1429,14 @@ article:not(#post_1) {
   margin: 0;
 }
 
-.modal-outer-container {
-  height: auto;
+#bookmark-reminder-modal .modal-inner-container {
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+  max-width: 100%;
+
+  & > div {
+    padding: 0;
+  }
 }
 
 #discourse-modal.fixed-modal:not(.history-modal) .modal-body:not(.reorder-categories):not(.poll-ui-builder):not(.poll-breakdown):not(.sidebar-categories-form-modal) {
