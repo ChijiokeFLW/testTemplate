@@ -103,15 +103,17 @@
         {{#if this.composer.site.mobileView}}
           <p class="new-post-heading">Add New Topic</p>
 
-          <div class="new-post-title-area">
-            <p class="new-post-title">Topic Title</p>
+          {{#if this.composer.model.canEditTitle}}
+            <div class="new-post-title-area">
+              <p class="new-post-title">Topic Title</p>
 
-            <ComposerTitle
-              @composer={{this.composer.model}}
-              @lastValidatedAt={{this.composer.lastValidatedAt}}
-              @focusTarget={{this.composer.focusTarget}}
-            />
-          </div>
+              <ComposerTitle
+                @composer={{this.composer.model}}
+                @lastValidatedAt={{this.composer.lastValidatedAt}}
+                @focusTarget={{this.composer.focusTarget}}
+              />
+            </div>
+          {{/if}}
           
           <div class="new-post-description-area">
             <p class="new-post-description">Description</p>
@@ -192,10 +194,10 @@
           </div>
 
           <div class="new-post-category-area">
-            <p class="new-post-category">Category</p>
-
             {{#unless this.composer.site.mobileView}}
               {{#if this.composer.model.showCategoryChooser}}
+                <p class="new-post-category">Category</p>
+                
                 <div class="category-input">
                   <CategoryChooser
                     @value={{this.composer.model.categoryId}}
