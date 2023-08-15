@@ -1776,10 +1776,7 @@ body.search-page {
     .search-header {
       padding: 0;
 
-      .search-page-heading:not(h1 > #search-result-count), .search-filters {
-        display: none;
-      }
-      :not(.search-page-heading>#search-result-count), .search-filters {
+      .search-filters {
         display: none;
       }
 
