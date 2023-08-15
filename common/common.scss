@@ -654,10 +654,6 @@ tr {
             @media screen and (max-width: 80rem) {
               display: block;
             }
-
-            svg {
-              fill: $tertiary;
-            }
           }
 
           li.hamburger-dropdown {
@@ -708,11 +704,6 @@ tr {
               position: relative;
               left: 0;
               top: 0;
-
-              svg {
-                color: $black40;
-                fill: none;
-              }
             }
 
             #search-term {
