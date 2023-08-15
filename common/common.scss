@@ -1529,6 +1529,13 @@ article:not(#post_1) {
       }
     }
 
+    .control-label, .control-group:not(.bookmark-name-wrap) .control-label {
+      margin: 0;
+      font-size: 1.125rem;
+      line-height: 1.75rem;
+      color: $black80;
+    }
+
     .control-group:not(.bookmark-name-wrap) {
       margin: 0.5rem 0;
 
