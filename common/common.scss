@@ -1535,10 +1535,19 @@ article:not(#post_1) {
 
       .tap-tile-grid {
         margin: 0;
-        
+
         .tap-tile {
           padding: 1rem 0 0.5rem;
           border-top: none;
+
+          svg {
+            display: none;
+          }
+
+          div {
+            font-size: 0.875rem;
+            line-height: 1.25rem;
+          }
         }
       }
     }
