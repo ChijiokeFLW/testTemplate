@@ -1776,14 +1776,20 @@ body.search-page {
     .search-header {
       padding: 0;
 
-      .search-filters {
-        display: none;
-      }
-
       .search-bar {
         & > :not(input.full-page-search) {
           display: none;
         }
+
+        input.full-page-search {
+          margin: 0;
+          border: 0.0625rem solid $black20;
+          border-radius: 0.25rem;
+        }
+      }
+
+      .search-filters, .search-advanced .search-info {
+        display: none;
       }
     }
   }
