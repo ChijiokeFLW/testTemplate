@@ -1580,10 +1580,10 @@ article:not(#post_1) {
       border: 0.125rem solid $secondary;
       color: $secondary;
       order: 2;
+      margin-left: auto;
     }
 
     #delete-bookmark {
-      margin-right: auto;
       order: 1;
     }
   }
