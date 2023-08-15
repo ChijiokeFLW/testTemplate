@@ -1516,7 +1516,7 @@ article:not(#post_1) {
       }
     }
 
-    .control-group {
+    .control-group:not(.bookmark-name-wrap) {
       margin: 0.5rem 0;
     }
   }
