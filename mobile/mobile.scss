@@ -101,9 +101,12 @@
   #reply-control.hide-preview,
   #reply-control {
     margin: 0;
-    padding: 1.5rem 1rem 1.25rem;
     height: calc(100% - 3rem);
     background-color: #ffffff;
+
+    &.open {
+      padding: 1.5rem 1rem 1.25rem;
+    }
 
     .reply-area {
       p {

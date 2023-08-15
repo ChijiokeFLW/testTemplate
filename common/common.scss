@@ -635,7 +635,7 @@ tr {
         }
 
         .icons.d-header-icons {
-          margin-left: 2rem;
+          margin: 0 0 0 2rem;
           display: flex;
           gap: 1rem;
 
@@ -644,6 +644,8 @@ tr {
           }
           
           li.search-dropdown {
+            order: 2;
+
             @media screen and (max-width: 80rem) {
               display: block;
             }
@@ -651,6 +653,14 @@ tr {
             svg {
               fill: $tertiary;
             }
+          }
+
+          li.hamburger-dropdown {
+            order: 3;
+          }
+
+          li.current-user {
+            order: 1;
           }
         }
       }
@@ -866,10 +876,6 @@ tr {
   // hide on scroll when nav is positioned to left of header:
   .title .custom-header-links.scrolling {
     display: none;
-  }
-
-  .icons.d-header-icons {
-    margin: 0 0 0 2rem;
   }
 
   .icon.btn-flat {
