@@ -74,14 +74,14 @@
         }
       }
     }
+  }
 
-    .wrap.post {
-      & ~ #reply-control.open.composer-action-reply, & ~ #reply-control.hide-preview, & ~ #reply-control {
-        background-color: red;
+  .wrap.post {
+    & ~ #reply-control.open.composer-action-reply, & ~ #reply-control.hide-preview, & ~ #reply-control {
+      background-color: red;
 
-        .reply-area .reply-to {
-          display: flex !important;
-        }
+      .reply-area .reply-to {
+        display: flex !important;
       }
     }
   }
