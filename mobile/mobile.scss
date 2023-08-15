@@ -104,10 +104,43 @@
     padding: 1.5rem 1rem 1.25rem;
     height: calc(100% - 3rem);
     background-color: #ffffff;
-  }
 
-  #reply-control .reply-area .submit-panel .save-or-cancel {
-    margin: 0;
+    .reply-area {
+      p {
+        margin: 0;
+      }
+
+      .new-post-title-area, .new-post-category-area {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .new-post-title-area {
+        gap: 0.5rem;
+      }
+
+      .new-post-category-area {
+        gap: 0.625rem;
+      }
+
+      .new-post-heading {
+        margin: 0;
+        font-size: 1.5rem;
+        font-family: 'Millik';
+        line-height: 1.98rem;
+        color: #2a3362;
+      }
+
+      .new-post-title, .new-post-category {
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        color: #2a3362;
+      }
+
+      .submit-panel .save-or-cancel {
+        margin: 0;
+      }
+    }
   }
 
   #discourse-modal.d-modal.login-modal:not(.hidden).fixed-modal .modal-inner-container, .d-modal.create-account.fixed-modal .modal-inner-container {

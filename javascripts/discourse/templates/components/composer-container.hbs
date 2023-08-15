@@ -103,8 +103,8 @@
         {{#if this.composer.site.mobileView}}
           <p class="new-post-heading">Add New Topic</p>
 
-          <div>
-            <p>Title</p>
+          <div class="new-post-title-area">
+            <p class="new-post-title">Title</p>
 
             <ComposerTitle
               @composer={{this.composer.model}}
@@ -187,9 +187,9 @@
             </div>
           </ComposerEditor>
 
-          <div>
-            <p>Category</p>
-            
+          <div class="new-post-category-area">
+            <p class="new-post-category">Category</p>
+
             <div class="category-input">
               <CategoryChooser
                 @value={{this.composer.model.categoryId}}
