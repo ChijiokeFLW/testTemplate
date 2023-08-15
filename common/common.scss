@@ -1459,6 +1459,11 @@ article:not(#post_1) {
       padding: 0.625rem;
       border: 0.0625rem solid #C4CDD5;
       border-radius: 0.25rem;
+      outline: none;
+
+      &:active {
+        border-color: $secondary;
+      }
 
       &::-webkit-input-placeholder {
         /* WebKit/Chrome/Opera/Safari */
