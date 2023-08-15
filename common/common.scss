@@ -1441,7 +1441,7 @@ article:not(#post_1) {
   margin: 0;
 }
 
-#bookmark-reminder-modal .modal-inner-container {
+#bookmark-reminder-modal .modal-inner-container, .forgot-password-modal .modal-inner-container {
   margin: 0 auto;
   padding: 1.5rem 1rem;
   max-width: 100%;
