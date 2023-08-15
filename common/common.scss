@@ -1578,6 +1578,11 @@ article:not(#post_1) {
     padding-bottom: 1rem;
     border-bottom: 0.0625rem solid $black10;
 
+    & > button {
+      font-size: 0.75rem;
+      margin: auto 0 auto auto;
+    }
+
     .modal-title-wrapper #discourse-modal-title {
       font-family: 'Millik';
       font-size: 1.5rem;
