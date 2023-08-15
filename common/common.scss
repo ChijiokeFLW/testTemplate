@@ -1447,11 +1447,10 @@ article:not(#post_1) {
   max-width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
   background-color: $tertiary;
 
   .modal-header {
-    padding-bottom: 0 0 1rem 0;
+    padding: 0 0 1rem 0;
     border: none;
 
     button {
@@ -1464,6 +1463,68 @@ article:not(#post_1) {
       line-height: 2.24rem;
       letter-spacing: 0.002px;
       color: $secondary;
+    }
+  }
+
+  .modal-body {
+    padding: 0;
+
+    label {
+      display: none;
+    }
+
+    #username-or-email {
+      margin: 0;
+      padding: 0.0875rem 1.125rem;
+      border: 0.0625rem solid $black20;
+      border-radius: 0.25rem;
+      outline: none;
+
+      &:focus {
+        border-color: $secondary;
+      }
+
+      &::-webkit-input-placeholder {
+        /* WebKit/Chrome/Opera/Safari */
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        color: $black40;
+      }
+
+      &:-moz-placeholder {
+        /* Firefox 4-18 */
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        color: $black40;
+      }
+
+      &::-moz-placeholder {
+        /* Firefox 19+ */
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        color: $black40;
+      }
+
+      &:-ms-input-placeholder {
+        /* IE 10-11 */
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        color: $black40;
+      }
+
+      &::-ms-input-placeholder {
+        /* Edge */
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        color: $black40;
+      }
+
+      &::placeholder {
+        /* Modern Browser */
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        color: $black40;
+      }
     }
   }
 }
