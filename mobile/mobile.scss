@@ -117,10 +117,27 @@
 
       .new-post-title-area {
         gap: 0.5rem;
+
+        #reply-title {
+          padding: 0.875rem 1.25rem 0.75rem 0.75rem;
+          border: 0.0625rem solid #C4CDD5;
+          border-radius: 0.25rem;
+          box-shadow: 0px 1px 4px 0px rgba(102, 113, 123, 0.21) inset;
+        }
       }
 
       .new-post-category-area {
         gap: 0.625rem;
+
+        .category-input, .select-kit-body {
+          max-width: 100%;
+        }
+
+        .category-input .category-chooser .select-kit-header {
+          padding: 0.875rem 1.25rem 0.75rem 0.75rem;
+          border-radius: 0.25rem;
+          border: 0.0625rem solid #D4DCE3;
+        }
       }
 
       .new-post-heading {
