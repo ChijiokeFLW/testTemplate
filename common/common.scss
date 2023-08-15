@@ -1769,6 +1769,12 @@ article:not(#post_1) {
   }
 }
 
+body.search-page {
+  .main-outlet {
+    padding: 1.5rem 0;
+  }
+}
+
 body:not(.ios-safari-composer-hacks) #reply-control.open,
 #reply-control.hide-preview,
 #reply-control {
