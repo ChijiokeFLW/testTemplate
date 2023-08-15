@@ -1449,6 +1449,23 @@ article:not(#post_1) {
   flex-direction: column;
   gap: 1rem;
   background-color: $tertiary;
+
+  .modal-header {
+    padding-bottom: 0 0 1rem 0;
+    border: none;
+
+    button {
+      display: none;
+    }
+
+    .modal-title-wrapper #discourse-modal-title {
+      font-family: 'Millik';
+      font-size: 1.75rem;
+      line-height: 2.24rem;
+      letter-spacing: 0.002px;
+      color: $secondary;
+    }
+  }
 }
 
 #bookmark-reminder-modal .modal-inner-container {
