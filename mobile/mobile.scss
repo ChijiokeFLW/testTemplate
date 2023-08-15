@@ -137,6 +137,16 @@
           padding: 0.875rem 1.25rem 0.75rem 0.75rem;
           border-radius: 0.25rem;
           border: 0.0625rem solid #D4DCE3;
+
+          .select-name {
+            padding: 0.75rem;
+            min-height: 8rem;
+            font-family: 'Moderat';
+            font-size: 0.875rem;
+            font-weight: 400;
+            line-height: 1.05rem;
+            color: #B5B8BA;
+          }
         }
       }
 
