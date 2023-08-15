@@ -194,22 +194,7 @@
           <div class="new-post-category-area">
             <p class="new-post-category">Category</p>
 
-            <div class="category-input">
-              <CategoryChooser
-                @value={{this.composer.model.categoryId}}
-                @onChange={{this.composer.updateCategory}}
-                @options={{hash
-                  disabled=this.composer.disableCategoryChooser
-                  scopedCategoryId=this.composer.scopedCategoryId
-                  prioritizedCategoryId=this.composer.prioritizedCategoryId
-                }}
-              />
-              <PopupInputTip
-                @validation={{this.composer.categoryValidation}}
-              />
-            </div>
-
-            {{!-- {{#unless this.composer.site.mobileView}}
+            {{#unless this.composer.site.mobileView}}
               {{#if this.composer.model.showCategoryChooser}}
                 <div class="category-input">
                   <CategoryChooser
@@ -241,7 +226,7 @@
               <PopupInputTip
                 @validation={{this.composer.tagValidation}}
               />
-            {{/if}} --}}
+            {{/if}}
 
             <PluginOutlet
               @name="after-title-and-category"
