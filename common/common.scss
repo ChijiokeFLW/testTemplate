@@ -1776,6 +1776,17 @@ body.search-page {
     .search-header {
       padding: 0;
 
+      .search-page-heading {
+        font-size: 1.125rem;
+        font-weight: 700;
+        line-height: 2.125rem;
+        color: $secondary;
+
+        .term {
+          color: #576AE6;
+        }
+      }
+
       .search-bar {
         & > :not(input.full-page-search) {
           display: none;
