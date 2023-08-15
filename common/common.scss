@@ -1549,23 +1549,6 @@ article:not(#post_1) {
           line-height: 1.25rem;
         }
       }
-
-      #save-bookmark {
-        background-color: $primary;
-        border: none;
-        order: 3;
-      }
-
-      .d-modal-cancel {
-        border: 0.125rem solid $secondary;
-        color: $secondary;
-        order: 2;
-        margin-left: auto;
-      }
-
-      #delete-bookmark {
-        order: 1;
-      }
     }
   }
 }
