@@ -239,11 +239,13 @@
     }
   }
 
-  #bookmark-reminder-modal .modal-middle-container {
-    background-color: #ffffff;
+  .forgot-password-modal, #bookmark-reminder-modal {
+    .modal-middle-container {
+      background-color: #ffffff;
 
-    .modal-inner-container {
-      box-shadow: none;
+      .modal-inner-container {
+        box-shadow: none;
+      }
     }
   }
 
