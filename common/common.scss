@@ -1556,6 +1556,7 @@ article:not(#post_1) {
 
   .modal-footer {
     border: none;
+    gap: 1.5rem;
 
     button {
       margin: 0;
@@ -1575,7 +1576,7 @@ article:not(#post_1) {
     }
 
     .d-modal-cancel {
-      border: 0.125 solid $secondary;
+      border: 0.125rem solid $secondary;
       color: $secondary;
     }
   }
