@@ -82,6 +82,12 @@
         }
       }
     }
+
+    .wrap.post ~ #reply-control.open.composer-action-reply {
+      .reply-area .reply-to {
+        display: flex !important;
+      }
+    }
   }
 
   .floating-search-input {
