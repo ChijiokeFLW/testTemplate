@@ -1788,9 +1788,13 @@ body.search-page {
         }
       }
 
-      .search-filters, .search-advanced .search-info {
+      .search-filters {
         display: none;
       }
+    }
+
+    .search-advanced .search-info {
+      display: none;
     }
   }
 }
