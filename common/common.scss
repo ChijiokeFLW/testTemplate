@@ -1437,6 +1437,15 @@ article:not(#post_1) {
   & > div {
     padding: 0;
   }
+
+  .modal-header {
+    .modal-title-wrapper #discourse-modal-title {
+      font-family: 'Millik';
+      font-size: 1.5rem;
+      line-height: 2.24rem;
+      color: $secondary;
+    }
+  }
 }
 
 #discourse-modal.fixed-modal:not(.history-modal) .modal-body:not(.reorder-categories):not(.poll-ui-builder):not(.poll-breakdown):not(.sidebar-categories-form-modal) {
