@@ -1463,63 +1463,63 @@ article:not(#post_1) {
       align-items: center;
       gap: 1.25rem;
 
-      .ember-text-field.bookmark-name {
-        margin: 0;
-        padding: 0.625rem;
-        border: 0.0625rem solid #C4CDD5;
-        border-radius: 0.25rem;
-        outline: none;
-
-        &:focus {
-          border-color: $secondary;
-        }
-
-        &::-webkit-input-placeholder {
-          /* WebKit/Chrome/Opera/Safari */
-          font-size: 0.875rem;
-          line-height: 1.25rem;
-          color: #B5B8BA;
-        }
-
-        &:-moz-placeholder {
-          /* Firefox 4-18 */
-          font-size: 0.875rem;
-          line-height: 1.25rem;
-          color: #B5B8BA;
-        }
-
-        &::-moz-placeholder {
-          /* Firefox 19+ */
-          font-size: 0.875rem;
-          line-height: 1.25rem;
-          color: #B5B8BA;
-        }
-
-        &:-ms-input-placeholder {
-          /* IE 10-11 */
-          font-size: 0.875rem;
-          line-height: 1.25rem;
-          color: #B5B8BA;
-        }
-
-        &::-ms-input-placeholder {
-          /* Edge */
-          font-size: 0.875rem;
-          line-height: 1.25rem;
-          color: #B5B8BA;
-        }
-
-        &::placeholder {
-          /* Modern Browser */
-          font-size: 0.875rem;
-          line-height: 1.25rem;
-          color: #B5B8BA;
-        }
-      }
-
       .bookmark-options-button {
         margin: 0;
         padding: 0;
+      }
+    }
+
+    .bookmark-name-wrap .ember-text-field.bookmark-name, .bookmark-options-panel #bookmark-auto-delete-preference {
+      margin: 0;
+      padding: 0.625rem;
+      border: 0.0625rem solid #C4CDD5;
+      border-radius: 0.25rem;
+      outline: none;
+
+      &:focus {
+        border-color: $secondary;
+      }
+
+      &::-webkit-input-placeholder {
+        /* WebKit/Chrome/Opera/Safari */
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        color: #B5B8BA;
+      }
+
+      &:-moz-placeholder {
+        /* Firefox 4-18 */
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        color: #B5B8BA;
+      }
+
+      &::-moz-placeholder {
+        /* Firefox 19+ */
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        color: #B5B8BA;
+      }
+
+      &:-ms-input-placeholder {
+        /* IE 10-11 */
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        color: #B5B8BA;
+      }
+
+      &::-ms-input-placeholder {
+        /* Edge */
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        color: #B5B8BA;
+      }
+
+      &::placeholder {
+        /* Modern Browser */
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        color: #B5B8BA;
       }
     }
 
