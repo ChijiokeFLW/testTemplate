@@ -1533,9 +1533,13 @@ article:not(#post_1) {
         color: $black80;
       }
 
-      .tap-tile {
-        padding: 1rem 0 0.5rem;
-        border-top: none;
+      .tap-tile-grid {
+        margin: 0;
+        
+        .tap-tile {
+          padding: 1rem 0 0.5rem;
+          border-top: none;
+        }
       }
     }
   }
