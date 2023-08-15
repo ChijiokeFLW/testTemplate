@@ -1231,9 +1231,9 @@ div.topic-navigation.with-timeline {
         svg {
           font-size: 0.9rem;
 
-          // &:not(.d-icon-link) {
-          //   fill: none;
-          // }
+          &:not(.d-icon-link) {
+            fill: none;
+          }
         }
 
         span {
@@ -1245,14 +1245,14 @@ div.topic-navigation.with-timeline {
         }
       }
 
-      .clicked {
-        .menu-button-item {
-          svg {
-            color: $primary;
-            fill: $primary;
-          }
-        }
-      }
+      // .clicked {
+      //   .menu-button-item {
+      //     svg {
+      //       color: $primary;
+      //       fill: $primary;
+      //     }
+      //   }
+      // }
     }
 
     .post-comment-header {
