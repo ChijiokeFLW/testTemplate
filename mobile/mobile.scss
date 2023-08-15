@@ -80,6 +80,7 @@
     & ~ #reply-control.open.composer-action-reply, & ~ #reply-control.hide-preview, & ~ #reply-control {
       .reply-area .reply-to {
         display: flex !important;
+        margin: 0;
 
         .reply-details .composer-action-title {
           gap: 0.75rem;
@@ -116,6 +117,10 @@
         .composer-controls {
           display: none;
         }
+      }
+
+      .new-post-description-area .new-post-description {
+        display: none;
       }
     }
   }
