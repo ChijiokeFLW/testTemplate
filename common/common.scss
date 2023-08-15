@@ -1570,14 +1570,21 @@ article:not(#post_1) {
       }
     }
 
-    #save-bookmark, .save-bookmark {
+    #save-bookmark {
       background-color: $primary;
       border: none;
+      order: 3;
     }
 
     .d-modal-cancel {
       border: 0.125rem solid $secondary;
       color: $secondary;
+      order: 2;
+    }
+
+    #delete-bookmark {
+      margin-right: auto;
+      order: 1;
     }
   }
 }
