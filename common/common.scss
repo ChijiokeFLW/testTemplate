@@ -1460,6 +1460,8 @@ article:not(#post_1) {
 
     .bookmark-name-wrap {
       margin: 0;
+      align-items: center;
+      gap: 1.25rem;
 
       .ember-text-field.bookmark-name {
         margin: 0;
@@ -1513,6 +1515,11 @@ article:not(#post_1) {
           line-height: 1.25rem;
           color: #B5B8BA;
         }
+      }
+
+      .bookmark-options-button {
+        margin: 0;
+        padding: 0;
       }
     }
 
