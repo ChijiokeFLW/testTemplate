@@ -1467,11 +1467,13 @@ article:not(#post_1) {
   }
 
   form {
+    margin: 0;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 
     .modal-body {
+      margin: 0 !important;
       padding: 0 !important;
 
       label {
@@ -1481,6 +1483,7 @@ article:not(#post_1) {
       #username-or-email {
         margin: 0;
         padding: 0.875rem 1.125rem;
+        width: 100%;
         background-color: $tertiary;
         border: 0.0625rem solid $black20;
         border-radius: 0.25rem;
@@ -1540,13 +1543,16 @@ article:not(#post_1) {
 
       button {
         margin: 0;
-        padding: 0.75rem 1.25rem;
+        padding: 1rem 1.5rem;
+        width: 100%;
         border-radius: 0.25rem;
+        background-color: $primary;
 
         span {
-          font-size: 0.875rem;
+          font-size: 1rem;
           font-weight: 500;
-          line-height: 1.25rem;
+          line-height: 1.5rem;
+          letter-spacing: 0.002px;
         }
       }
     }
