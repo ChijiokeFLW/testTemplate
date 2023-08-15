@@ -3,9 +3,9 @@
 .mobile-view {
   .d-header {
     box-shadow: none;
-    
+
     .wrap {
-      padding: 1rem 1.25rem 0;
+      padding: 1rem 1.25rem 0.5rem;
 
       .contents .panel {
         .header-buttons {
@@ -71,6 +71,14 @@
 
         .icons.d-header-icons {
           margin-left: 1rem
+        }
+      }
+    }
+
+    .wrap.post {
+      #reply-control.open, #reply-control.hide-preview, #reply-control {
+        .reply-area .reply-to {
+          display: flex !important;
         }
       }
     }
