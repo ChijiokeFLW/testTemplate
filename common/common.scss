@@ -1775,6 +1775,7 @@ body.search-page {
 
     .search-header {
       padding: 0;
+      background-color: #ffffff00;
 
       .search-page-heading {
         font-size: 1.125rem;
@@ -1805,8 +1806,56 @@ body.search-page {
       }
     }
 
-    .search-advanced .search-info {
-      display: none;
+    .search-advanced {
+      .search-info {
+        display: none;
+      }
+
+      .search-results {
+        margin: 1.5rem 0;
+
+        .fps-results {
+          margin: 0;
+          padding: 1rem 0 0.75rem;
+          flex-direction: column;
+
+          .author {
+            margin: 0 0 0.75rem 0;
+            padding: 0;
+
+            img {
+              width: 2rem;
+              height: 2rem;
+            }
+          }
+
+          .fps-topic {
+            .topic {
+              .search-link {
+                font-size: 1rem;
+                font-weight: 500;
+                line-height: 1.5rem;
+                color: $secondary;
+              }
+
+              .search-category {
+                margin: 0.25rem 0 0 0;
+
+                .badge-category-bg {
+                  display: none;
+                }
+
+                .badge-category {
+                  font-size: 0.75rem;
+                  font-weight: 400;
+                  line-height: 1rem;
+                  color: $black40;
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
