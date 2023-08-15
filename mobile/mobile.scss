@@ -76,7 +76,7 @@
     }
 
     .wrap.post {
-      & ~ #reply-control.open, & ~ #reply-control.hide-preview, & ~ #reply-control {
+      & ~ #reply-control.open.composer-action-reply, & ~ #reply-control.hide-preview, & ~ #reply-control {
         .reply-area .reply-to {
           display: flex !important;
         }
